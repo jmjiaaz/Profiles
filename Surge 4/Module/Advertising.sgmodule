@@ -1,1 +1,95 @@
-# Advertising
+#!name=Block Advertising
+#!desc=Block Advertising for Surge iOS
+#!system=ios
+
+[Rule]
+URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
+
+[URL Rewrite]
+# > 58 - app.58.com,pic?.ajkimg.com
+^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv - reject
+^https?:\/\/app\.58\.com\/api\/log\/ - reject
+^https?:\/\/pic\d\.ajkimg\.com\/mat\/\w+\?imageMogr\d\/format\/jpg\/thumbnail\/\d{3}x\d{4}$ - reject
+^https?:\/\/\w+\.58cdn\.com\.cn\/brandads\/ - reject
+# A
+# --- (Alibaba) ---
+# > Taobao - gw.alicdn.com,heic.alicdn.com
+^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) - reject
+^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
+# > Xianyu - acs.m.taobao.com
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ - reject
+# > koubei - acs.m.taobao.com
+^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ - reject
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.home\.splash\.awesome\.get\/ - reject
+# B
+# > ByteDance - *.amemv.com,*.snssdk.com
+^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
+^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ - reject
+^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ - reject
+^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ - reject
+# ---(Baidu)---
+# > Baidu Map - newclient.map.baidu.com
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads - reject
+# > iQIYI - act.vip.iqiyi.com
+^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do - reject
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
+# C
+# > CaijingNet - api.caijingmobile.com
+^https?:\/\/api\.caijingmobile\.com\/(ad|advert)\/ - reject
+^https?:\/\/m\.caijing\.com\.cn\/startup_ad_ios\.html$ - reject
+# > CSDN - gw.csdn.net
+^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement - reject
+# G
+# > Google - www.youtube.com,s.youtube.com
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
+^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
+# J
+# > JD - api.m.jd.com,ms.jr.jd.com,img*.360buyimg.com
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture - reject
+^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
+# N
+# ---(NetEase)---
+# > NetEase MailMaster - appconf.mail.163.com
+^https?:\/\/appconf\.mail\.163\.com\/mmad\/ - reject
+# > NetEase News - c.m.163.com
+^https?:\/\/c\.m\.163\.com\/nc\/gl\/ - reject
+# S
+# ---(Sina)---
+# > Weibo - *.uve.weibo.com,weibointl.api.weibo.cn
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads - reject
+# > tianqitong - tqt.weibo.cn
+^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=(tqt_sdkad|tqtad) - reject
+^https?:\/\/tqt\.weibo\.cn\/[\w=?&%.-]+advert\.index - reject
+^https?:\/\/tqt\.weibo\.cn\/api\/advert\/ - reject
+# T
+# > Tencent Video
+^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
+^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d_ - reject
+# > Tencent News - r.inews.qq.com
+^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) - reject
+# > Tencent Sports - news.ssp.qq.com
+^https?:\/\/news\.ssp\.qq\.com\/app - reject
+# > Tencent Music
+^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
+# Z
+# > Zhihu - www.zhihu.com,api.zhihu.com
+^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
+^https?:\/\/api\.zhihu\.com\/fringe\/ad - reject
+^https?:\/\/api\.zhihu\.com\/ad - reject
+^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations - reject
+^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad - reject
+^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations - reject
+
+[MITM]
+hostname = %APPEND% app.58.com,pic?.ajkimg.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,*.amemv.com,*.snssdk.com,newclient.map.baidu.com,act.vip.iqiyi.com,api.caijingmobile.com,gw.csdn.net,www.youtube.com,s.youtube.com,api.m.jd.com,ms.jr.jd.com,img*.360buyimg.com,appconf.mail.163.com,c.m.163.com,*.uve.weibo.com,weibointl.api.weibo.cn,tqt.weibo.cn,r.inews.qq.com,news.ssp.qq.com,www.zhihu.com,api.zhihu.com
