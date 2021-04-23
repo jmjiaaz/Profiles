@@ -1,1 +1,91 @@
-# Global
+# > Amazon
+DOMAIN-SUFFIX,amazon.co.jp
+DOMAIN,d3c33hcgiwev3.cloudfront.net
+DOMAIN,payments-jp.amazon.com
+DOMAIN,s3-ap-northeast-1.amazonaws.com
+DOMAIN,s3-ap-southeast-2.amazonaws.com
+# > Apple
+DOMAIN,testflight.apple.com
+# > Discord
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+# > Dropbox
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxapi.com
+DOMAIN-SUFFIX,dropboxusercontent.com
+# > Facebook
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbaddins.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbworkmail.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,oculuscdn.com
+DOMAIN-SUFFIX,rocksdb.org
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+# > Github
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubusercontent.com
+# > The New York Times
+DOMAIN-SUFFIX,nyt.com
+DOMAIN-SUFFIX,nytchina.com
+DOMAIN-SUFFIX,nytcn.me
+DOMAIN-SUFFIX,nytco.com
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,nytimg.com
+DOMAIN-SUFFIX,nytlog.com
+DOMAIN-SUFFIX,nytstyle.com
+# > Reddit
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditmedia.com
+# > Twitter
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,vine.co
+# (IP Blackhole)
+# > Facebook
+DOMAIN-KEYWORD,.facebook.
+DOMAIN-SUFFIX,facebookmail.com
+# > Others
+DOMAIN-SUFFIX,noxinfluencer.com
+DOMAIN-SUFFIX,smartmailcloud.com
+DOMAIN-SUFFIX,weebly.com
+DOMAIN-SUFFIX,twitter.jp
+# (Region-Restricted Access Denied)
+# ---(Apple)---
+# > Apple URL Shortener
+DOMAIN-SUFFIX,appsto.re
+# > iBooks Store download
+DOMAIN,books.itunes.apple.com
+# > App Store Preview
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com
+# > Spotlight
+DOMAIN,api-glb-sea.smoot.apple.com
+# > Look Up
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,lookup-api.apple.com
+# > Apple Music Web
+DOMAIN,beta.music.apple.com
+# (Network Jitter)
+# > Apple
+DOMAIN,appleid.apple.com
+DOMAIN,developer.apple.com
+DOMAIN,www.icloud.com
+DOMAIN,ocsp.apple.com
+DOMAIN,xp.apple.com
