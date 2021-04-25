@@ -2,3 +2,27 @@ host-suffix, 1password.com, direct
 host-suffix, 1passwordservices.com, direct
 host-suffix, 1passwordusercontent.com, direct
 host-suffix, agilebits.com, direct
+USER-AGENT,OneDrive*,proxy
+host-keyword,onedrive,proxy
+host-suffix,azure.com,proxy
+host-suffix,fabric.io,proxy
+host-suffix,files.1drv.com,proxy
+host-suffix,hotmail.com,proxy
+host-suffix,live.com,proxy
+host-suffix,live.net,proxy
+host-suffix,livefilestore.com,proxy
+host-suffix,mesh.com,proxy
+host-suffix,microsoft.com,proxy
+host-suffix,microsoftonline.com,proxy
+host-suffix,microsoft-tst.com,proxy
+host-suffix,msn.com,proxy
+host-suffix,office.com,proxy
+host-suffix,office.net,proxy
+host-suffix,onedrive.com,proxy
+host-suffix,outlook.com,proxy
+host-suffix,p.sfx.ms,proxy
+host-suffix,s-microsoft.com,proxy
+host-suffix,sharepoint.com,proxy
+host-suffix,skype.com,proxy
+host-suffix,spoprod-a.akamaihd.net,proxy
+host-suffix,storage.msn.com,proxy
