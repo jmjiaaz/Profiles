@@ -66,28 +66,5 @@
 ^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^(http|https):\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
 
-# > iQIYI - act.vip.iqiyi.com,intl.iqiyi.com
-^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo - reject
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do - reject
-^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show - reject
-^https?:\/\/intl\.iqiyi\.com\/ad_external\/ - reject
-^https?:\/\/intl\.iqiyi\.com\/video\/advertise - reject
-# > ChinaMobile - clientaccess.10086.cn
-^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
-^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
-# > ChinaUnicom - m.client.10010.com
-^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
-^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd - reject
-# ---(ChinaTelecom)---
-# > Cloud189 - cloud.189.cn
-^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
-# > Weibo - *.uve.weibo.com,weibointl.api.weibo.cn
-^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads - reject
-# > Tencent Sports - news.ssp.qq.com
-^https?:\/\/news\.ssp\.qq\.com\/app - reject
-
-
-
-
 [MITM]
-hostname = %INSERT% www.google.cn,act.vip.iqiyi.com,intl.iqiyi.com,clientaccess.10086.cn,m.client.10010.com,cloud.189.cn,*.uve.weibo.com,weibointl.api.weibo.cn,news.ssp.qq.com,
+hostname = %INSERT% www.google.cn
