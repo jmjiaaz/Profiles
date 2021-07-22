@@ -1,3 +1,10 @@
+# > Adobe
+DOMAIN-SUFFIX,acrobat.com
+DOMAIN-SUFFIX,adobe.com
+DOMAIN-SUFFIX,adobe.io
+DOMAIN-SUFFIX,adobecontent.io
+DOMAIN-SUFFIX,adobedtm.com
+DOMAIN-SUFFIX,adobelogin.com
 # > Amazon
 DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN,d3c33hcgiwev3.cloudfront.net
@@ -98,7 +105,6 @@ DOMAIN-SUFFIX,4shared.com
 DOMAIN-SUFFIX,9cache.com
 DOMAIN-SUFFIX,9gag.com
 DOMAIN-SUFFIX,abc.com
-DOMAIN-SUFFIX,adobe.com
 DOMAIN-SUFFIX,bbc.com
 DOMAIN-SUFFIX,box.com
 DOMAIN-SUFFIX,cloudflare.com
