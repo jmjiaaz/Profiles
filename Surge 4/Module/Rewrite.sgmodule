@@ -96,13 +96,6 @@
 # > Tencent Music
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
-# > Zhihu - www.zhihu.com,api.zhihu.com
-^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
-^https?:\/\/api\.zhihu\.com\/fringe\/ad - reject
-^https?:\/\/api\.zhihu\.com\/ad - reject
-^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations - reject
-^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad - reject
-^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations - reject
 
 [Script]
 # > Weibo - api.weibo.cn,mapi.weibo.com,*.uve.weibo.com
