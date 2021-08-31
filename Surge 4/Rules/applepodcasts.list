@@ -1,9 +1,0 @@
-PROCESS-NAME,Podcasts
-USER-AGENT,Podcasts*
-DOMAIN,bag.itunes.apple.com
-DOMAIN,play.itunes.apple.com
-DOMAIN,bookkeeper.itunes.apple.com
-DOMAIN,podcasts.itunes.apple.com
-DOMAIN,pancake.apple.com
-DOMAIN-SUFFIX,podcasts.apple.com
-DOMAIN-SUFFIX,simplecastaudio.com
