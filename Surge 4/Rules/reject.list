@@ -60,3 +60,10 @@ DOMAIN,u1.img.mobile.sina.cn
 DOMAIN,sax.sina.com.cn
 DOMAIN,saxs.sina.com.cn
 DOMAIN,saxn.sina.com.cn
+
+# > ByteDance
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN,ad.toutiao.com
+DOMAIN,dsp.toutiao.com
+DOMAIN,pangolin.snssdk.com
