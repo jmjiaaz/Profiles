@@ -16,7 +16,7 @@ DOMAIN,wxsnsdythumb.wxs.qq.com
 DOMAIN,ad.tencentmusic.com
 DOMAIN,adstats.tencentmusic.com
 DOMAIN-SUFFIX,trace.qq.com
-# DOMAIN,btrace.qq.com
+DOMAIN,btrace.qq.com
 DOMAIN,btrace.video.qq.com
 DOMAIN,mtrace.qq.com
 DOMAIN,safebrowsing.urlsec.qq.com
